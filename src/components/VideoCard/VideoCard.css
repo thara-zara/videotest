@@ -1,0 +1,194 @@
+.v-card{
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 200px;
+    /* border: 1px solid blue; */
+}
+.v-card-left{
+
+}
+.v-box {
+    width: 500px;
+    height: 400px;
+    /* border: 1px solid yellow; */
+    position: relative;
+    cursor: pointer;
+}
+.v-box video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 100;
+}
+.v-box .text{
+    position: absolute;
+    top: -75px;
+    left: -75px;
+}
+.v-box .text .top{
+    font-size: 125px;
+    font-weight: bolder;
+    text-transform: uppercase;  
+    color: rgb(226, 147, 43);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: blue;
+}
+.v-box:hover .top{
+    -webkit-text-fill-color: rgb(226, 147, 43);
+    -webkit-text-stroke: 0px;
+    -webkit-text-stroke-color: blue;
+}
+.v-box:hover .btm{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: rgb(226, 147, 43);
+}
+/*************************************/
+
+/***********************************/
+.v-box .text .btm{
+    font-size: 125px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.v-card-right{
+    width: 400px;
+    /* border: 1px solid yellow; */
+}
+.v-card-right h1{
+    width: 100%;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.v-card-right p{
+    width: 100%;
+    margin-top: 10px;
+    color: gray;
+}
+
+.button2 {
+    padding: 10px 20px 10px 20px;
+    text-transform: capitalize;
+    background: rgb(255, 159, 70);
+    color: #fff;
+    position: absolute;
+    top: 250px;
+    cursor: pointer;
+    left: 0;
+}
+
+ .button2 button{
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    text-transform: capitalize;
+}
+/******************************************************/
+
+@media screen and (max-width:868px){
+    .v-card{
+    /* border: 1px solid pink; */
+    flex-direction: column;
+    }
+    .v-box {
+        width: 400px;
+        height: 300px;
+        /* border: 1px solid rgb(0, 255, 234); */
+        position: relative;
+    }
+    .v-card-left,.v-card-right{
+        /* border: 1px solid rgb(132, 0, 255); */
+        align-self: center;
+    }
+    .v-box video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 100;
+    }
+    .v-box .text{
+        position: absolute;
+        top: -75px;
+        left: -25px;
+    }
+    .v-box .text .top{
+        font-size: 100px;
+        font-weight: bolder;
+        text-transform: uppercase;
+    }
+    .v-box .text .btm{
+        font-size: 100px;
+    }
+    .v-card-right{
+        width: 400px;
+    }
+    .v-card-right h1{
+        width: 100%;
+        font-size: 25px;
+    }
+    .v-card-right p{
+        width: 100%;
+        margin-top: 10px;
+        color: gray;
+    }
+}
+
+@media screen and (max-width:540px){
+    .v-card{
+    /* border: 1px solid pink; */
+    flex-direction: column;
+    margin-left:0px;
+    }
+    .v-box {
+        width: 250px;
+        height: 200px;
+        /* border: 1px solid rgb(0, 255, 234); */
+        position: relative;
+    }
+    .v-card-left,.v-card-right{
+        /* border: 1px solid rgb(132, 0, 255); */
+        align-self: center;
+    }
+    .v-box video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 100;
+    }
+    .v-box .text{
+        position: absolute;
+        top: -75px;
+        left: 0px;
+    }
+    .v-box .text .top{
+        font-size: 50px;
+    }
+    .v-box .text .btm{
+        font-size: 50px;
+    }
+    .v-card-right{
+        width: 200px;
+    }
+    .v-card-right h1{
+        width: 100%;
+        font-size: 18px;
+        
+    }
+    .button2 {
+        padding: 10px 20px 10px 20px;
+        text-transform: capitalize;
+        background: rgb(255, 159, 70);
+        color: #fff;
+        position: absolute;
+        top: 100px;
+        cursor: pointer;
+        left: 0;
+    }
+}

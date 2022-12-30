@@ -1,0 +1,51 @@
+.nav{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav .logo img{
+    width: 100px;
+    cursor: pointer;
+}
+.nav .menu i{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav-item{
+    position: absolute;
+    color: #fff;
+    top: 80px;
+    right: 0;
+    background: rgb(165, 116, 42);
+    width: auto;
+   height: auto;
+    z-index: 10000;
+    opacity: 0;
+    transition: 0.2s ease-in;
+}
+.nav-item.active{
+    opacity: 1;
+    transition: 0.2s ease-in;
+}
+.nav-item > div{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 25px;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    cursor: pointer;
+}
+.nav-item .social{
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+.nav-item .social i{
+    font-size: 25px;
+}

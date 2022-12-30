@@ -1,0 +1,130 @@
+.foot{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 200px;
+    position: relative;
+
+}
+.foot .foot-top{
+    background: rgb(83, 83, 183);
+    width: 75%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.foot .foot-top input{
+    width: 50%;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+}
+.foot .foot-top button{
+    padding: 10px 20px 10px 20px;
+    color:#fff ;
+    background: rgb(223, 172, 53) !important;
+    cursor: pointer;
+    border:none;
+}
+.foot .foot-top .top{
+    position: absolute;
+    left: 0;
+    top:-175px;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.top-all{ 
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: rgb(23, 91, 93);
+}
+.btm-all{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: rgb(23, 91, 93);
+}
+.copy{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-top: 50px;
+    gap: 50px;
+}
+.social{
+    display: flex;
+    gap: 10px;
+}
+.social i{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:868px){
+    .foot .foot-top .top{
+        font-size: 75px;
+        top:-125px;
+    }
+    .foot .foot-top{
+        width: 75%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .foot .foot-top button{
+        margin-top: 10px;
+        padding: 7px 20px 7px 20px;
+        color: white;
+        background: rgb(223, 172, 53) !important;
+        cursor: pointer;
+        border: none;
+    }
+    .copy{
+        display: flex;
+        flex-direction: column;
+    }
+    .mid{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:540px){
+    .foot .foot-top .top{
+        font-size: 50px;
+        top:-75px;
+    }
+    .foot .foot-top{
+        width: 75%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .copy{
+        display: flex;
+        flex-direction: column;
+    }
+    .mid{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .foot .foot-top button{
+        margin-top: 10px;
+        padding: 7px 20px 7px 20px;
+        color: white;
+        background: rgb(223, 172, 53) !important;
+        cursor: pointer;
+        border: none;
+    }
+}

@@ -1,0 +1,205 @@
+.v-card-rights{
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 200px;
+}
+.v-card-left-right{
+    
+}
+.v-box-right {
+    width: 500px;
+    height: 400px;
+    /* border: 1px solid yellow; */
+    position: relative;
+    cursor: pointer;
+}
+.v-box-right video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 100;
+}
+.v-box-right .text-right{
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    text-align: right;
+}
+.v-box-right .text-right .top-right{
+    font-size: 125px;
+    font-weight: bolder;
+    text-transform: uppercase;
+   color: rgb(226, 147, 43);
+   -webkit-text-fill-color: transparent;
+   -webkit-text-stroke: 2px;
+   -webkit-text-stroke-color: blue;
+
+}
+.v-box-right .text-right .btm-right{
+    font-size: 125px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.v-box-right:hover .top-right{
+    -webkit-text-fill-color: rgb(226, 147, 43);
+    -webkit-text-stroke: 0px;
+    -webkit-text-stroke-color: blue;
+}
+.v-box-right:hover .btm-right{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: rgb(226, 147, 43);
+}
+
+
+
+
+
+
+
+
+
+.v-card-right-right{
+    width: 400px;
+
+    /* border: 1px solid yellow; */
+}
+.v-card-right-right h1{
+    width: 100%;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.v-card-right-right p{
+    width: 100%;
+    margin-top: 10px;
+    color: gray;
+    
+}
+
+.v-card-left-right .button1 {
+    padding: 10px 20px 10px 20px;
+    text-transform: capitalize;
+    background: rgb(255, 159, 70);
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top:250px;
+    right: 0;
+}
+.v-card-left-right .button1 button{
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+
+@media screen and (max-width:868px){
+    .v-card-rights{
+        /* border: 1px solid rgb(255, 61, 94); */
+        flex-direction: column-reverse;
+        margin-left: 50px;
+    }
+    .v-card-left-right,.v-card-right-right{
+        align-self: center;
+    }
+    .v-box-right  {
+        width: 400px;
+        height: 300px;
+        /* border: 1px solid yellow; */
+        position: relative;
+    }
+    .v-box-right video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 100;
+    }
+    .v-box-right .text-right{
+        position: absolute;
+        top: -75px;
+        right: -25px;
+    }
+    .v-box-right .text-right .top-right{
+        font-size: 100px;
+    }
+    .v-box-right .text-right .btm-right{
+        font-size: 100px;
+    }
+    .v-card-right-right{
+        width: 400px;
+    }
+    .v-card-right-right h1{
+        width: 100%;
+        font-size: 25px;
+    }
+    .v-card-right-right p{
+        width: 100%;
+        margin-top: 10px;
+        color: gray;
+    }
+}
+
+@media screen and (max-width:540px){
+    .v-card-rights{
+        /* border: 1px solid rgb(255, 61, 94); */
+        flex-direction: column-reverse;
+       margin-right:50px;
+    }
+    .v-card-left-right,.v-card-right-right{
+        align-self: center;
+    }
+    .v-box-right  {
+        width:250px;
+        height: 200px;
+        /* border: 1px solid yellow; */
+        position: relative;
+    }
+    .v-box-right video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 100;
+    }
+    .v-box-right .text-right{
+        position: absolute;
+        top: -75px;
+        right: 0px;
+    }
+    .v-box-right .text-right .top-right{
+        font-size: 50px;
+    }
+    .v-box-right .text-right .btm-right{
+        font-size:50px;
+    }
+    .v-card-right-right{
+        width: 200px;
+
+    }
+    .v-card-right-right h1{
+        font-size: 18px;
+        width: 100%;
+    }
+    .btn-right{
+        position: absolute;
+        top: 100px;
+        right: 0;
+    }
+    .button1 {
+        padding: 10px 20px 10px 20px;
+        text-transform: capitalize;
+        background: rgb(255, 159, 70);
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        top:100px !important;
+        right: 0;
+    }
+}
